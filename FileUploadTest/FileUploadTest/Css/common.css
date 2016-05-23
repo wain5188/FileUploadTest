@@ -1,0 +1,261 @@
+﻿/* webkit, opera, IE9 */
+#innerMainDiv::selection {
+    background: #ff7200;
+}
+/* mozilla firefox */
+#innerMainDiv::-moz-selection {
+    background: #ff7200;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.dialogDiv {
+    border: 1px #90c2e5 solid;
+    width: 450px;
+    height: 260px;
+    position: absolute;
+    background-color: #e0f2ff;
+    font-size: 12px;
+    z-index: 99;
+}
+
+.toolbarDiv {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    background: url('../Content/Image/person_bg.png') repeat-x;
+}
+
+.contentDiv {
+    width: 100%;
+    height: auto;
+}
+
+.closeBtn {
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: 5px;
+}
+
+#innerMainDiv {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    min-height: 600px;
+    color: #333333;
+    font-family: 宋体;
+}
+
+    #innerMainDiv table {
+        width: auto;
+    }
+
+    #innerMainDiv a {
+        font-family: 宋体;
+        color: #00baff;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+        #innerMainDiv a:hover {
+            text-decoration: underline;
+        }
+
+    #innerMainDiv select[name=Comboboxcode] {
+        width: 450px;
+    }
+
+.sendCodeBtn {
+    border: none;
+    cursor: pointer;
+    float: right;
+    color: #2779b4;
+    width: 91px;
+    height: 27px;
+    background: url('../../Content/Image/ForgetPwd/password_yzma.png');
+    margin-top: 4px;
+}
+
+.sendCodeBtn_disabled {
+    cursor: default;
+}
+
+.inputBtn {
+    width: 132px;
+    height: 30px;
+    border: none;
+    background: url('../../Content/Image/Login/login_cz.png');
+    color: #000000;
+    cursor: pointer;
+}
+
+.iputBtnOver {
+    background: url('../../Content/Image/Login/login_dl.png');
+    color: #ffffff;
+}
+
+.textInputBorder {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px #82b5c8 solid;
+    width: 182px;
+}
+
+.textInput {
+    border: none;
+}
+
+.textInput_PersonalCenter {
+    border: none;
+    width: 180px;
+    height: 25px;
+}
+
+textarea {
+    font-size: 12px;
+    width: 450px;
+    height: 110px;
+    resize: none;
+}
+
+.required {
+    border: 1px red solid;
+}
+
+.requireStar {
+    color: red;
+    font-size: 12px;
+}
+
+.btnDiv_dialog {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.btnDiv_Edit {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.okCancelBtn {
+    border: none;
+    background: url('../Content/Image/person_an.png');
+    width: 68px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.imgBtn {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#titleDiv {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 宋体;
+    font-weight: bold;
+    color: #080808;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.infoTbl {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .infoTbl th {
+        background-color: #b9d9ee;
+        height: 35px;
+        border: 1px #abc7d3 solid;
+    }
+
+.msgTr {
+    height: 12px;
+}
+
+.msg {
+    margin-left: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.searchTbl {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.searchInput {
+    border: 1px #82b5c8 solid;
+}
+
+.yesIcon {
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.queryTbl {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+    .queryTbl input[type=text] {
+        width: 180px;
+    }
+
+.fileItem {
+    width: 440px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+    .fileItem img {
+        vertical-align: middle;
+    }
+
+.fileName {
+    float: left;
+    width: 350px;
+    height: 20px;
+    overflow: hidden;
+    background-color: rgba(224, 235, 254, 1);
+}
+
+.fileOperationDiv {
+    float: right;
+    width: auto;
+}
+
+    .fileOperationDiv a {
+        margin-right: 5px;
+        text-decoration: none;
+    }
+
+        .fileOperationDiv a :hover {
+            text-decoration: none;
+        }
+.IdCardFiled {
+    width:220px;
+}

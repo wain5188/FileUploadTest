@@ -1,0 +1,30 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/BaseFounction.js"></script>
+</head>
+<body>
+<div class="Area">
+    <table>
+    <tr>
+        <td align="right"><span class="requireStar">*</span> 相关图片上传</td>
+        <td align="left" class="leftTd">
+            <input type="file" name="fileToUploads" id="fileToUploads" multiple="multiple" style="width: 350px"/>
+            <input type="hidden" name="groupId" id="groupId" value="@Guid.NewGuid()"/>
+            <input type="button" value="上传" onclick="upload(this)"/><br/>
+            <span class="requireStar">（上传附件格式为*.JPG/*.PNG/*.ZIP/WORD/EXCEL文件）</span>
+        </td>
+    </tr>
+        </table>
+</div>
+</body>
+</html>
