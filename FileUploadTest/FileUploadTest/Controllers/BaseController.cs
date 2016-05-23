@@ -4,6 +4,7 @@ using System.Linq;
 using System.Transactions;
 using System.Web;
 using System.Web.Mvc;
+using YiYi.Examine.Common;
 using YiYi.Examine.ViewModel;
 
 namespace WebApplication1.Controllers
@@ -13,7 +14,7 @@ namespace WebApplication1.Controllers
        [HttpPost]
         public ActionResult Upload(string groupId = "")
         {
-
+            ClassHelper.Log4Net(typeof(BaseController), "Upload函数开始");
             HttpFileCollection fileToUploads = System.Web.HttpContext.Current.Request.Files;
 
             if (fileToUploads.Count < 1)
@@ -70,7 +71,7 @@ namespace WebApplication1.Controllers
                 return Json(new { result = 0, msg = resultstr });
             }
             #endregion
-
+            ClassHelper.Log4Net(typeof(BaseController), "Upload必要的if检测结束");
             try
             {
                 #region 文件上传
@@ -115,7 +116,7 @@ namespace WebApplication1.Controllers
 
                     //数据库添加
                     //var data = TemplFilesManagerApp.Instance.Add(groupId, files);
-
+                    ClassHelper.Log4Net(typeof(BaseController), "上传文件结束");
                     ts.Complete();
                     return Json(new { result = 1, msg = new object[] { groupId, files } });
                 }

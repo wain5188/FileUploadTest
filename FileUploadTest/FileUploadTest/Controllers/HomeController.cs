@@ -28,7 +28,7 @@ namespace FileUploadTest.Controllers
             return View();
         }
         [HttpGet]
-        public ActionResult AddFile()
+        public ActionResult A1()
         {
             return View();
         }
