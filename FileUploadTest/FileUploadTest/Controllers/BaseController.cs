@@ -61,10 +61,10 @@ namespace WebApplication1.Controllers
                 size += file.ContentLength;
             }
 
-            if (size > 20 * 1024 * 1024)
-            {
-                resultstr += "文件合计大小不可超过20MB; \r\n";
-            }
+            //if (size > 20 * 1024 * 1024)
+            //{
+            //    resultstr += "文件合计大小不可超过20MB; \r\n";
+            //}
 
             if (resultstr != "") //校验不通过
             {
@@ -116,8 +116,9 @@ namespace WebApplication1.Controllers
 
                     //数据库添加
                     //var data = TemplFilesManagerApp.Instance.Add(groupId, files);
-                    ClassHelper.Log4Net(typeof(BaseController), "上传文件结束");
+                    ClassHelper.Log4Net(typeof(BaseController), "上传文件事务开始");
                     ts.Complete();
+                    ClassHelper.Log4Net(typeof(BaseController), "上传文件事务结束");
                     return Json(new { result = 1, msg = new object[] { groupId, files } });
                 }
                 #endregion
